@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delta Installer | ByBokaArabic</title>
+    <style>
+        body {
+            background-color: #7b0000; /* خلفية باللون الأحمر */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+
+        .container {
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 40px;
+            border-radius: 30px;
+            border: 2px solid #ff0000;
+            text-align: center;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* تنسيق الصورة مع الميلان والحركة */
+        .animated-image {
+            width: 250px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            transform: rotate(-5deg); /* ميلان لليسار */
+            animation: float 3s ease-in-out infinite; /* حركة فوق وتحت */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-5deg); }
+            50% { transform: translateY(-15px) rotate(-5deg); }
+        }
+
+        h2 {
+            color: #00d9ff;
+            margin-bottom: 25px;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+        }
+
+        .features li {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .features li::after {
+            content: " ✦";
+            color: #a600ff;
+        }
+
+        /* تنسيق الأزرار */
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            background: linear-gradient(45deg, #ff0000, #ff4d4d);
+            color: white;
+            text-decoration: none;
+            border-radius: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 0, 0, 0.5);
+        }
+
+        .btn i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- الصورة الجديدة مع الأنيميشن -->
+        <img src="https://i.ibb.co/Xx49mXfV/IMG-3014.webp" alt="Delta Logo" class="animated-image">
+
+        <h2>مميزات هاك دلتا</h2>
+        
+        <ul class="features">
+            <li>من اقوى الهاكات حمايةً</li>
+            <li>سهولة الحصول على المفتاح</li>
+            <li>يمكنك بحث السكريبتات فيه</li>
+        </ul>
+
+        <!-- أزرار التحميل -->
+        <a href="https://www.mediafire.com/file/v6sogoz9kn9iduw/Delta-2.716.875.apk/file" class="btn">
+            Delta Install 📥
+        </a>
+
+        <a href="https://www.mediafire.com/file/nopi33zoga9mfu1/Delta-2.711.871-VN.apk/file" class="btn">
+            Delta VNG Install 📥
+        </a>
+    </div>
+
+</body>
+</html>

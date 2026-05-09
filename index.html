@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* تغيير لجعل الصفحة قابلة للتمرير إذا لزم الأمر */
+            min-height: 100vh; 
             margin: 0;
             padding: 20px 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -28,19 +28,22 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
         }
 
-        /* تنسيق الصورة مع الميلان والحركة */
+        /* تنسيق الصورة مع الميلان لليسار والحركة */
         .animated-image {
             width: 250px;
             border-radius: 20px;
             margin-bottom: 20px;
-            transform: rotate(-5deg); /* ميلان لليسار */
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transform: rotate(-7deg); /* ميلان لليسار */
             animation: float 3s ease-in-out infinite; /* حركة فوق وتحت */
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0) rotate(-5deg); }
-            50% { transform: translateY(-15px) rotate(-5deg); }
+            0%, 100% { transform: translateY(0) rotate(-7deg); }
+            50% { transform: translateY(-15px) rotate(-7deg); }
         }
 
         h2 {
@@ -96,6 +99,28 @@
 <body>
 
     <div class="container">
+        
+        <!-- قسم هاك رونيكس الجديد -->
+        <img src="https://i.ibb.co/8L21mLqy/IMG-3041.webp" alt="Ronix Logo" class="animated-image">
+
+        <h2>مميزات هاك رونيكس</h2>
+        
+        <ul class="features">
+            <li>خلفيه و قائمه اسطوريه</li>
+            <li>يمكنك بحث السكريبتات فيه</li>
+            <li>سهولة استخدامه</li>
+        </ul>
+
+        <a href="https://www.mediafire.com/file/cut0tioprp921tt/Ronix_32Bits-2.710.707.apk/file" class="btn">
+            Ronix Install 📥
+        </a>
+
+        <a href="https://www.mediafire.com/file/cut0tioprp921tt/Ronix_32Bits-2.710.707.apk/file" class="btn">
+            Ronix VNG Install 📥
+        </a>
+
+        <hr>
+
         <!-- قسم هاك دلتا -->
         <img src="https://i.ibb.co/Xx49mXfV/IMG-3014.webp" alt="Delta Logo" class="animated-image">
 
@@ -115,9 +140,9 @@
             Delta VNG Install 📥
         </a>
 
-        <hr> <!-- فاصل بين القسمين -->
+        <hr>
 
-        <!-- قسم هاك كوديكس المضاف حديثاً -->
+        <!-- قسم هاك كوديكس -->
         <img src="https://i.ibb.co/HLHY0sXR/IMG-3018.jpg" alt="Codex Logo" class="animated-image">
 
         <h2>مميزات هاك كوديكس</h2>
